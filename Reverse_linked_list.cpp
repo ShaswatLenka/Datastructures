@@ -14,11 +14,12 @@ node *head = NULL;
 void print(node *head)
 {
 	node *pointer = head;
-	do
+	while (pointer->link)
 	{
 	printf("%d\t",pointer->data );
 	pointer=pointer->link;
-	}while (pointer->link);
+	}
+	cout<<pointer->data;
 }
 
 // function to reverse a linked list
